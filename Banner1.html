@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+      <title>300X250 Banner AMPHTML Ad Template</title>
+        <meta name="viewport" content="width=device-width">
+        <script async src="https://cdn.ampproject.org/amp4ads-v0.js"></script>
+        <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+        <style amp4ads-boilerplate>body{visibility:hidden}</style>
+        <style amp-custom>
+            #video-container {
+            /* Set to ad dimensions */
+            width: 300px;
+            height: 250px;
+        
+            /* Set so children can position themselves in relation to the container */
+            position: relative;
+        
+            /* Basic font styles */
+            font-family: sans-serif;
+            line-height: 1;
+            color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="video-container" hidden>
+            <amp-video  id="my-video"
+                        layout="fixed-height"
+                        height="250"
+                        src="/static/samples/video/tokyo.mp4"
+                        loop>
+            </amp-video>
+        </div>
+    </body>
+</html>
