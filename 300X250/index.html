@@ -25,13 +25,20 @@
     </head>
     <body>
         <div id="video-container" hidden>
-            <amp-video  id="my-video"
+            <!-- <amp-video  id="my-video"
                         autoplay
                         layout="fixed-height"
                         height="250"
                         src="./assets/300x250.mp4"
                         >
-            </amp-video>
+            </amp-video> -->
+            <amp-carousel width="300" height="250" layout="responsive" type="slides" autoplay delay="2000" role="region" aria-label="Carousel with autoplay">
+                <amp-img src="/assets/1.jpg" widUpdateth="300" height="250" layout="responsive" alt="Your first step in understanding your past,"></amp-img>
+                <amp-img src="/assets/2.jpg" width="300" height="250" layout="responsive" alt="Is your next step to knowing your future."></amp-img>
+                <amp-img src="/assets/3.jpg" width="300" height="250" layout="responsive" alt="Discover psychic email readings"></amp-img>
+                <amp-img src="/assets/4.jpg" width="300" height="250" layout="responsive" alt="Past Present Future"></amp-img>
+                <amp-img src="/assets/5.jpg" width="300" height="250" layout="responsive" alt="Find out more"></amp-img>
+            </amp-carousel>
         </div>
     </body>
 </html>
