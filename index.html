@@ -1,44 +1,32 @@
-<html amp4ads>
+<!doctype html>
+<html ⚡>
     <head>
         <title>300X250 Banner AMPHTML Ad Template</title>
         <meta charset="utf-8">
         <meta name="ad.size" content="width=300,height=250">
         <meta name="viewport" content="width=device-width">
         <script async src="https://cdn.ampproject.org/amp4ads-v0.js"></script>
-        <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+        <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
         <style amp4ads-boilerplate>body{visibility:hidden}</style>
-        <style amp-custom>
-            #video-container {
-            /* Set to ad dimensions */
-            width: 300px;
-            height: 250px;
-        
-            /* Set so children can position themselves in relation to the container */
-            position: relative;
-        
-            /* Basic font styles */
-            font-family: sans-serif;
-            line-height: 1;
-            color: #fff;
-            }
-        </style>
+<style amp-custom>
+	.container{
+		width:300px;
+		height:250px;
+		position:relative;
+	}
+</style>
+       
     </head>
     <body>
         
-            <!-- <amp-video  id="my-video"
-                        autoplay
-                        layout="fixed-height"
-                        height="250"
-                        src="./assets/300x250.mp4"
-                        >
-            </amp-video> -->
+   		<div class="container">
             <amp-carousel width="300" height="250" layout="responsive" type="slides" autoplay delay="2000" role="region" aria-label="Carousel with autoplay">
-                <amp-img src="/assets/1.jpg" width="300" height="250" layout="responsive" alt="Your first step in understanding your past,"></amp-img>
-                <amp-img src="/assets/2.jpg" width="300" height="250" layout="responsive" alt="Is your next step to knowing your future."></amp-img>
-                <amp-img src="/assets/3.jpg" width="300" height="250" layout="responsive" alt="Discover psychic email readings"></amp-img>
-                <amp-img src="/assets/4.jpg" width="300" height="250" layout="responsive" alt="Past Present Future"></amp-img>
-                <amp-img src="/assets/5.jpg" width="300" height="250" layout="responsive" alt="Find out more"></amp-img>
+                <amp-img src="./assets/1.jpg" width="300" height="250" layout="responsive" alt="Your first step in understanding your past,"></amp-img>
+                <amp-img src="./assets/2.jpg" width="300" height="250" layout="responsive" alt="Is your next step to knowing your future."></amp-img>
+                <amp-img src="./assets/3.jpg" width="300" height="250" layout="responsive" alt="Discover psychic email readings"></amp-img>
+                <amp-img src="./assets/4.jpg" width="300" height="250" layout="responsive" alt="Past Present Future"></amp-img>
+                <amp-img src="./assets/5.jpg" width="300" height="250" layout="responsive" alt="Find out more"></amp-img>
             </amp-carousel>
-        
+        	</div>
     </body>
 </html>
